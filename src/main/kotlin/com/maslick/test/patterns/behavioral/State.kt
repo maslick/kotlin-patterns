@@ -1,7 +1,7 @@
-package com.maslick.test.patterns
+package com.maslick.test.patterns.behavioral
 
-import com.maslick.test.patterns.AuthorizationState.Authorized
-import com.maslick.test.patterns.AuthorizationState.Unauthorized
+import com.maslick.test.patterns.behavioral.AuthorizationState.Authorized
+import com.maslick.test.patterns.behavioral.AuthorizationState.Unauthorized
 
 
 /**
@@ -14,7 +14,7 @@ sealed class AuthorizationState {
 }
 
 class Authorization {
-    private var state:AuthorizationState = Unauthorized()
+    private var state: AuthorizationState = Unauthorized()
 
     fun login(user: String) {
         state = Authorized(user)

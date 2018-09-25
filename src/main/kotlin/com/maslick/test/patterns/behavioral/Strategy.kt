@@ -1,4 +1,4 @@
-package com.maslick.test.patterns
+package com.maslick.test.patterns.behavioral
 
 /**
  * Created by maslick on 20/06/17.

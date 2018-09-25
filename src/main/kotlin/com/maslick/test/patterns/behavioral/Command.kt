@@ -1,4 +1,4 @@
-package com.maslick.test.patterns
+package com.maslick.test.patterns.behavioral
 
 /**
  * Created by maslick on 20/06/17.
@@ -20,7 +20,7 @@ class RecvCommand(val str: String): Command {
 class CommandProcessor {
     private val queue = ArrayList<Command>()
 
-    fun addToQueue(command: Command):CommandProcessor {
+    fun addToQueue(command: Command): CommandProcessor {
         queue.add(command)
         return this
     }
